@@ -1,4 +1,4 @@
 spk
 ===
 
-Schilddruesenpraxis Kantstraße
+Schilddrüsenpraxis Kantstraße
