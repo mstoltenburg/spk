@@ -30,7 +30,7 @@
 	</header>
 
 	<div id="content">
-
+Hallo
 	</div>
 
 	<div id="global">

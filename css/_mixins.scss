@@ -43,13 +43,7 @@
 	}
 }
 
-@mixin box-shadow($color: rgba(0,0,0,0.1), $offset-x: 1px, $offset-y: 1px, $blur-radius: 2px, $spread-radius: 0) {
-	-webkit-box-shadow: $color $offset-x $offset-y $blur-radius $spread-radius;
-	   -moz-box-shadow: $color $offset-x $offset-y $blur-radius $spread-radius;
-	        box-shadow: $color $offset-x $offset-y $blur-radius $spread-radius;
-}
-
-@mixin box-shadows($shadows...) {
+@mixin box-shadow($shadows...) {
 	-webkit-box-shadow: $shadows;
 	   -moz-box-shadow: $shadows;
 	        box-shadow: $shadows;
