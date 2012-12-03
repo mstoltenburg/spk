@@ -21,7 +21,7 @@
 
 		<nav>
 			<ul class="clearfix">
-				<li><a href="aerztinnen" class="doctors">Ärztinnen</a></li>
+				<li class="sel"><a href="aerztinnen" class="doctors">Ärztinnen</a></li>
 				<li><a href="team" class="team">Team</a></li>
 				<li><a href="schwerpunkt" class="focus">Schwerpunkt</a></li>
 				<li><a href="termine" class="appointment">Termine</a></li>

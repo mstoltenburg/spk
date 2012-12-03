@@ -134,6 +134,8 @@ header nav li {
   -moz-box-shadow: 1px 0 0 white;
   box-shadow: 1px 0 0 white; }
   header nav li:hover {
+    background-color: rgba(220, 31, 0, 0.2); }
+  header nav li.sel {
     background-color: #a70000;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#a70000), to(#dc1f00));
     background-image: -webkit-linear-gradient(top, #a70000, #dc1f00);
@@ -150,27 +152,27 @@ header nav a {
   background-position: 40px 47%;
   background-repeat: no-repeat; }
 
-header nav a:hover {
+header nav .sel a {
   color: #fff; }
 
 .team {
   text-indent: 46px;
   background-position: 40px 47%; }
-  .team:hover {
+  .sel .team {
     background-position: -710px 47%; }
 
 .doctors,
 .focus {
   text-indent: 38px;
   background-position: -210px 47%; }
-  .doctors:hover,
-  .focus:hover {
+  .sel .doctors, .sel
+  .focus {
     background-position: -960px 47%; }
 
 .appointment {
   text-indent: 42px;
   background-position: -460px 47%; }
-  .appointment:hover {
+  .sel .appointment {
     background-position: -1210px 47%; }
 
 #content {

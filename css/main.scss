@@ -155,6 +155,10 @@ header nav li {
     @include box-shadow(1px 0 0 #fff);
 
     &:hover {
+        background-color: rgba(220,31,0,0.2);
+    }
+
+    &.sel {
         @include background-linear-gradient(#a70000, #dc1f00);
     }
 }
@@ -167,6 +171,8 @@ header nav a {
     background-repeat: no-repeat;
 }
 header nav a:hover {
+}
+header nav .sel a {
     color: #fff;
 }
 
@@ -174,7 +180,7 @@ header nav a:hover {
     text-indent: 46px;
     background-position: 40px 47%;
 
-    &:hover {
+    .sel & {
         background-position: -710px 47%;
     }
 }
@@ -183,7 +189,7 @@ header nav a:hover {
     text-indent: 38px;
     background-position: -210px 47%;
 
-    &:hover {
+    .sel & {
         background-position: -960px 47%;
     }
 }
@@ -191,7 +197,7 @@ header nav a:hover {
     text-indent: 42px;
     background-position: -460px 47%;
 
-    &:hover {
+    .sel & {
         background-position: -1210px 47%;
     }
 }
