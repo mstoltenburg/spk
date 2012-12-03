@@ -5,249 +5,298 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
-}
+  color: #222; }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
-}
+  font-size: 1em;
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
  */
-
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-
 img {
-    vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
-    resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-
 .chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  min-width: 1000px; }
 
-header div {
-    width: 960px;
-    margin: 40px auto 46px auto;
-}
+a {
+  text-decoration: none; }
+
+header hgroup {
+  width: 960px;
+  min-height: 147px;
+  border-left: 5px solid #a70000;
+  color: #a70000;
+  margin: 40px auto 46px auto;
+  padding: 0; }
+
 header h1 {
-    margin: 0;
-}
-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-header li {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
+  margin: 0 0 17px 32px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 53px;
+  white-space: pre-line; }
+
+header h2 {
+  float: left;
+  margin: 0;
+  padding: 0 12px 0 32px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1; }
+
+header h2 + h2 {
+  border-left: 2px solid #a70000;
+  padding-left: 12px; }
 
 header nav {
-    background-color: #ccc;
-}
+  background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
+  font-size: 25px;
+  font-weight: 300; }
+
 header nav ul {
-    width: 960px;
-    margin: 0 auto;
-    border-left: 1px solid #fff;
-}
+  list-style-type: none;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  border-left: 1px solid #dfdfdf;
+  -webkit-box-shadow: inset 1px 0 0 white;
+  -moz-box-shadow: inset 1px 0 0 white;
+  box-shadow: inset 1px 0 0 white; }
+
 header nav li {
-    padding: 16px 38px;
-    border-right: 1px solid #fff;
-}
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #dfdfdf;
+  -webkit-box-shadow: 1px 0 0 white;
+  -moz-box-shadow: 1px 0 0 white;
+  box-shadow: 1px 0 0 white; }
+  header nav li:hover {
+    background-color: #a70000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a70000), to(#dc1f00));
+    background-image: -webkit-linear-gradient(top, #a70000, #dc1f00);
+    background-image: -moz-linear-gradient(top, #a70000, #dc1f00);
+    background-image: -ms-linear-gradient(top, #a70000, #dc1f00);
+    background-image: -o-linear-gradient(top, #a70000, #dc1f00);
+    background-image: linear-gradient(to bottom, #a70000, #dc1f00); }
+
+header nav a {
+  padding: 20px 40px;
+  color: #8b0200;
+  display: block;
+  background-image: url("../images/icons/sprite.png");
+  background-position: 40px 47%;
+  background-repeat: no-repeat; }
+
+header nav a:hover {
+  color: #fff; }
+
+.team {
+  text-indent: 46px;
+  background-position: 40px 47%; }
+  .team:hover {
+    background-position: -710px 47%; }
+
+.doctors,
+.focus {
+  text-indent: 38px;
+  background-position: -210px 47%; }
+  .doctors:hover,
+  .focus:hover {
+    background-position: -960px 47%; }
+
+.appointment {
+  text-indent: 42px;
+  background-position: -460px 47%; }
+  .appointment:hover {
+    background-position: -1210px 47%; }
 
 #content {
-    min-height: 323px;
-}
+  min-height: 323px; }
 
 #global {
-    background-color: #ccc;
-}
-#global div {
-    width: 960px;
-    margin: 0 auto;
-    padding: 23px 0;
-}
-#global aside {
-    width: 245px;
-    float: left;
-    margin-right: 20px;
-    padding: 20px;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    color: #fff;
-    background-color: green;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f66), to(#f00)); /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(top, #f66, #f00); /* Chrome10+,Safari5.1+ */
-    background-image:    -moz-linear-gradient(top, #f66, #f00); /* FF3.6+ */
-    background-image:     -ms-linear-gradient(top, #f66, #f00); /* IE10+ */
-    background-image:      -o-linear-gradient(top, #f66, #f00); /* Opera 11.10+ */
-    background-image:         linear-gradient(to bottom, #f66, #f00); /* W3C */
+  background: #f6f6f1 url("../images/pattern.png") repeat 50% 0; }
 
-}
+#global div {
+  width: 960px;
+  margin: 0 auto;
+  padding: 23px 0; }
+
+#global aside {
+  width: 244px;
+  min-height: 133px;
+  float: left;
+  margin-right: 30px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #c41700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c41700), to(#8c0000));
+  background-image: -webkit-linear-gradient(top, #c41700, #8c0000);
+  background-image: -moz-linear-gradient(top, #c41700, #8c0000);
+  background-image: -ms-linear-gradient(top, #c41700, #8c0000);
+  background-image: -o-linear-gradient(top, #c41700, #8c0000);
+  background-image: linear-gradient(to bottom, #c41700, #8c0000);
+  -webkit-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.2), 1px 1px 0 white;
+  -moz-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.2), 1px 1px 0 white;
+  box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.2), 1px 1px 0 white; }
+
 #global aside p {
-    margin: 0;
-}
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.2941;
+  margin: 0; }
+
+#global aside p + p {
+  margin-top: 5px; }
+
+#global aside strong {
+  font-weight: normal; }
+
+footer {
+  margin: 27px 0;
+  font-size: 14px; }
 
 footer nav ul {
-    width: 960px;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-}
+  width: 960px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  color: #a8a8a8; }
+
 footer nav li {
-    float: left;
-    margin: 0;
-    padding: 0 10px 0 0;
-}
+  float: left;
+  margin: 0;
+  padding: 0 10px 0 0; }
 
-
-
-
-
-
-
-
-
+footer nav a {
+  color: #a8a8a8; }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Image replacement
  */
-
 .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
 
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-}
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-
 .hidden {
-    display: none !important;
-    visibility: hidden;
-}
+  display: none !important;
+  visibility: hidden; }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-
 .invisible {
-    visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -260,109 +309,87 @@ footer nav li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
 
 .clearfix:after {
-    clear: both;
-}
+  clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-
 .clearfix {
-    *zoom: 1;
-}
+  *zoom: 1; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
+  /* Style adjustments for viewports that meet the condition */ }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline; }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+  tr,
+  img {
+    page-break-inside: avoid; }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  img {
+    max-width: 100% !important; }
 
-    img {
-        max-width: 100% !important;
-    }
+  @page {
+    margin: 0.5cm; }
 
-    @page {
-        margin: 0.5cm;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+  h2,
+  h3 {
+    page-break-after: avoid; } }

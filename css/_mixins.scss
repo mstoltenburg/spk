@@ -1,0 +1,90 @@
+////////////////////////// mixins ////////////////////////////
+
+@mixin box-sizing($sizing: border-box) {
+	-webkit-box-sizing: $sizing;
+	   -moz-box-sizing: $sizing;
+	    -ms-box-sizing: $sizing;
+	        box-sizing: $sizing;
+}
+
+@mixin border-radius($radius: 10px) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+@mixin border-radius-multiple($topleft: 10px, $topright: 10px, $bottomright: 10px, $bottomleft: 10px) {
+	-moz-border-radius: $topleft $topright $bottomright $bottomleft;
+
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+}
+
+@mixin background-linear-gradient($from, $to) {
+	background-color: $from; // Old browsers
+
+	@if $from != $to {
+		background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to)); // Chrome,Safari4+
+		background-image: -webkit-linear-gradient(top, $from, $to); // Chrome10+,Safari5.1+
+		background-image:    -moz-linear-gradient(top, $from, $to); // FF3.6+
+		background-image:     -ms-linear-gradient(top, $from, $to); // IE10+
+		background-image:      -o-linear-gradient(top, $from, $to); // Opera 11.10+
+		background-image:         linear-gradient(to bottom, $from, $to); // W3C
+//		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}', GradientType=0); // IE6-9
+	} @else {
+		background-image: none;
+	}
+}
+
+@mixin box-shadow($color: rgba(0,0,0,0.1), $offset-x: 1px, $offset-y: 1px, $blur-radius: 2px, $spread-radius: 0) {
+	-webkit-box-shadow: $color $offset-x $offset-y $blur-radius $spread-radius;
+	   -moz-box-shadow: $color $offset-x $offset-y $blur-radius $spread-radius;
+	        box-shadow: $color $offset-x $offset-y $blur-radius $spread-radius;
+}
+
+@mixin box-shadows($shadows...) {
+	-webkit-box-shadow: $shadows;
+	   -moz-box-shadow: $shadows;
+	        box-shadow: $shadows;
+}
+
+//call with brackets around multiple arguments ie. @include transition((width 1s, height 1s))
+@mixin transition($value) {
+	-webkit-transition: $value;
+	   -moz-transition: $value;
+	    -ms-transition: $value;
+	     -o-transition: $value;
+	        transition: $value;
+}
+
+@mixin transition-delay($value) {
+	-webkit-transition-delay: $value;
+	   -moz-transition-delay: $value;
+	    -ms-transition-delay: $value;
+	     -o-transition-delay: $value;
+	        transition-delay: $value;
+}
+
+@mixin placeholder($color: #a9a9a9, $font-style: normal) {
+	::-webkit-input-placeholder {
+		color: $color;
+		font-style: $font-style;
+	}
+
+	:-moz-placeholder {
+		color: $color;
+		font-style: $font-style;
+	}
+
+	.placeholder {
+		color: $color;
+		font-style: $font-style;
+	}
+}

@@ -11,21 +11,20 @@
 
 <body>
 	<header>
-		<div>
-			<h1>Schilddrüsenpraxis Kantstraße</h1>
-			<ul class="clearfix">
-				<li>Innere Medizin</li>
-				<li>Hormonlabor</li>
-				<li>Szintigrafie</li>
-			</ul>
-		</div>
+		<hgroup class="clearfix">
+			<h1>Schilddrüsenpraxis
+			Kantstraße</h1>
+			<h2>Innere Medizin</h2>
+			<h2>Hormonlabor</h2>
+			<h2>Szintigrafie</h2>
+		</hgroup>
 
 		<nav>
 			<ul class="clearfix">
-				<li><a href="team">Team</a></li>
-				<li><a href="aerztinnen">Ärztinnen</a></li>
-				<li><a href="schwerpunkt">Schwerpunkt</a></li>
-				<li><a href="termine">Termine</a></li>
+				<li><a href="aerztinnen" class="doctors">Ärztinnen</a></li>
+				<li><a href="team" class="team">Team</a></li>
+				<li><a href="schwerpunkt" class="focus">Schwerpunkt</a></li>
+				<li><a href="termine" class="appointment">Termine</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -41,17 +40,21 @@
 				<p>
 					Kantstraße<br>
 					10623 Berlin<br>
-					Tel. 030 / 313 30 53<br>
-					Fax. 003 / 313 37 61<br>
+				</p>
+				<p>
+					<strong>Tel. 030 / 313 30 53</strong><br>
+					<strong>Fax. 003 / 313 37 61</strong><br>
 				</p>
 			</aside>
 
 			<aside>
 				<h2 class="visuallyhidden">Sprechzeiten</h2>
 				<p>
-					Montag-Donnerstag:<br>
+					<strong>Montag-Donnerstag:</strong><br>
 					8-13 / 14-18 Uhr<br>
-					Freitag:<br>
+				</p>
+				<p>
+					<strong>Freitag:</strong><br>
 					8-13 Uhr<br>
 				</p>
 			</aside>
@@ -59,7 +62,7 @@
 			<aside>
 				<h2 class="visuallyhidden">Fahrverbindungen</h2>
 				<p>
-					Bus M49, U- / S-Bhf. Zoologischer Garten
+					<strong>Bus M49, U- / S-Bhf. Zoologischer Garten</strong>
 				</p>
 			</aside>
 		</div>
@@ -69,6 +72,7 @@
 		<nav>
 			<ul class="clearfix">
 				<li><a href="impressum">Impressum</a></li>
+				<li>|</li>
 				<li><a href="kontakt">Kontakt</a></li>
 			</ul>
 		</nav>
