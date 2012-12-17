@@ -203,10 +203,18 @@ header nav .sel a {
 }
 
 #content {
+    background-color: #dcdcdc;
     min-height: 323px;
     // margin-left: -20px;
     // padding-left: 20px;
     @include box-shadow(inset 0 10px 10px -10px rgba(0,0,0,0.37), inset 0 -10px 10px -10px rgba(0,0,0,0.37));
+}
+
+#stage {
+    background-color: #fff;
+    padding: 20px;
+    width: 920px;
+    margin: 0 auto;
 }
 
 #global {

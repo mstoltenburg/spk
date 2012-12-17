@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
+
+<?php include '../include/config.inc.php' ?>
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -30,7 +33,6 @@
 	</header>
 
 	<div id="content">
-	<div id="stage">
 
 		<p>Wir sind <strong>Fachärzte für Innere Medizin</strong> mit breitgefächerter Ausbildung und Zulassung für die Durchführung nuklearmedizinischer Schilddrüsendiagnostik.</p>
 
@@ -64,7 +66,6 @@
 			<strong>die gesamten erforderlichen Untersuchungen</strong> und die <strong>Therapie</strong> an <strong>einem Ort und in einer Hand</strong> durchzuführen.
 		</p>
 
-	</div>
 	</div>
 
 	<div id="global">
