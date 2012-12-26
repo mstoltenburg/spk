@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<?php include '../include/config.inc.php'; $BASE_DIR = 'schwerpunkt'; ?>
+<?php include '../include/config.inc.php'; $BASE_DIR = 'kontakt'; ?>
 
 <head>
 	<?php include $BASE_URL . 'include/snippets/head.inc.php'; ?>
@@ -19,17 +19,17 @@
 
 		<p>Dazu gehören sämtliche:</p>
 
-		<ul>
+		<ol>
 			<li><strong>Schilddrüsenfunktionsstörungen</strong></li>
 			<li><strong>Schilddrüsenvergrößerungen</strong> mit oder ohne Knotenbildungen</li>
 			<li><strong>Schilddrüsenentzündungen</strong></li>
 			<li><strong>Schilddrüsenkarzinome</strong></li>
 			<li><strong>Nebenschilddrüsenerkrankungen</strong></li>
-		</ul>
+		</ol>
 
 		<p>Neben der Erhebung der Krankengeschichte und körperlichen Untersuchung bieten wir folgende <strong>Leistungen an</strong>:</p>
 
-		<ul>
+		<ol>
 			<li><strong>Sonographie</strong></li>
 			<li><strong>Szintigraphie</strong></li>
 			<li><strong>Feinnadelpunktion</strong></li>
@@ -38,7 +38,7 @@
 			<li><strong>Indikationsstellung zur OP / Radiojodtherapie</strong></li>
 			<li><strong>Radiojodtest</strong></li>
 			<li><strong>Nachsorge</strong> von operierten oder mit Radiojod behandelten sowie an Krebs erkrankten Patienten</li>
-		</ul>
+		</ol>
 
 		<p>
 			Durch den <strong>Zusammenschluss</strong> von <strong>Innerer Medizin</strong> und <strong>nuklearmedizinischer Diagnostik</strong> haben wir die Möglichkeit,
