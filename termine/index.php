@@ -13,8 +13,8 @@
 	<div id="content">
 	<div id="stage">
 
+		<h5>Sprechzeiten</h5>
 		<p>
-		Sprechzeiten:<br />
 		Montag-Donnerstag: 8-13 / 14-18 Uhr<br />
 		Freitag: 8-13 Uhr<br />
 		</p>

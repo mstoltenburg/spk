@@ -42,6 +42,17 @@
 		background-image: none;
 	}
 }
+@mixin background-radial-gradient($y) {
+    // radial-gradient(600px 10px at 50% 100% , rgba(0, 0, 0, 0.55) 0%, transparent 100%) repeat scroll 0 0 transparent
+    background-color: #f6f6f1;
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-image: url("../images/pattern.png");
+    background-image: -webkit-radial-gradient(ellipse 600px 10px at 50% $y, rgba(0,0,0,0.2) 0%, transparent 100%), url("../images/pattern.png");
+    background-image:    -moz-radial-gradient(ellipse 600px 10px at 50% $y, rgba(0,0,0,0.2) 0%, transparent 100%), url("../images/pattern.png");
+    background-image:      -o-radial-gradient(ellipse 600px 10px at 50% $y, rgba(0,0,0,0.2) 0%, transparent 100%), url("../images/pattern.png");
+    background-image:         radial-gradient(ellipse 600px 10px at 50% $y, rgba(0,0,0,0.2) 0%, transparent 100%), url("../images/pattern.png");
+}
 
 @mixin box-shadow($shadows...) {
 	-webkit-box-shadow: $shadows;

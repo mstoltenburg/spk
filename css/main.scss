@@ -140,6 +140,8 @@ header h2 + h2 {
 
 header nav {
     background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
+    @include box-shadow(inset 0 10px 10px -10px rgba(0,0,0,0.37));
+    // @include background-radial-gradient(0%);
     font-size: 25px;
     font-weight: 300;
 }
@@ -159,11 +161,13 @@ header nav li {
     @include box-shadow(1px 0 0 #fff);
 
     &:hover {
-        background-color: rgba(220,31,0,0.2);
+        background-color: rgba(196,23,0,0.12);
     }
 
     &.sel {
+        // background-color: rgba(196,23,0,0.12);
         @include background-linear-gradient(#a70000, #dc1f00);
+        @include box-shadow(inherit);
     }
 }
 header nav a {
@@ -223,49 +227,113 @@ header nav .sel a {
     margin: 0 auto;
     @include box-shadow(inherit);
     color: #572500;
+    font-weight: 300;
+
+    h2, h5, strong {
+        font-weight: 500;
+    }
 
     a {
         color: #572500;
-        &:hover { text-decoration: underline; }
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    p, ul { margin: 0 0 1.4em 0; }
-    p:last-child { margin-bottom: 0; }
+    h2 { margin: 1em 0 0 0; font-size: 20px; }
+    p, ul, h5 { margin: 1.4em 0 0 0; }
+    p:first-child,
+    ul:first-child,
+    h2:first-child,
+    h5:first-child { margin-top: 0; }
+    p + ul { margin-top: 0.7em; }
+    h5 { font-size: 1em; }
+    h5 + p { margin-top: 0; }
 
     &.slider {
-        padding: 25px 0px;
+        padding: 0;
         width: 960px;
-        height: 275px;
+        height: 325px;
+        background: inherit;
     }
 }
 
+$sliderWidth1: 960px;
+$sliderWidth2: 920px;
+
+.teamshow #slider {
+    padding: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    @include box-shadow(none);
+
+    ul.slides {
+        width: auto;
+
+        & > li {
+            width: auto;
+            float: none;
+        }
+    }
+
+    .slide {
+        margin: 0 0 35px 0;
+        height: auto;
+    }
+
+    ol#skiplinks,
+    a.previous,
+    a.next {
+        display: none;
+    }
+
+    .portraits {
+        margin: 0 0 20px 0;
+        // text-align: left;
+    }
+}
 #slider {
-    width: 763px;
+    width: $sliderWidth1;
     height: 275px;
     overflow: hidden;
     color: #572500;
     background: #fff;
-    font-size: 14px;
+    padding: 25px 0;
+    // font-size: 14px;
     line-height: 1.2857;
+    @include box-shadow(inherit);
 
     ul.slides {
         margin: 0;
         padding: 0;
-        width: 4000px;
+        width: 6000px;
         position: relative;
         left: 0;
-        -webkit-transition: left 0.4s;
-           -moz-transition: left 0.4s;
-             -o-transition: left 0.4s;
-                transition: left 0.4s;
+        -webkit-transition: left 0.42s;
+           -moz-transition: left 0.42s;
+             -o-transition: left 0.42s;
+                transition: left 0.42s;
+
+        li {
+            list-style-type: disc;
+        }
 
         & > li {
             margin: 0;
             padding: 0;
             list-style-type: none;
             float: left;
-            width: 763px;
+            width: $sliderWidth1;
             position: relative;
+        }
+    }
+
+    &.small {
+        width: $sliderWidth2;
+
+        ul.slides > li {
+            width: $sliderWidth2;
         }
     }
 
@@ -287,42 +355,56 @@ header nav .sel a {
         margin: 0 0 10px 0;
     }
 
-    .doctor {
+    .slide {
         position: relative;
-        height: 250px;
-        margin: 25px 85px 0 94px;
+        height: 238px;
+        margin: 25px 90px 0 90px;
+    }
+
+    .vcard {
+        // padding: 10px;
+        // background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
+        // height: 200px;
+
+        img {
+            float: left;
+            margin-right: 20px;
+            width: 200px;
+            position: absolute;
+            clip: rect(0px,200px,200px,0px);
+        }
     }
 
     .info {
         margin-left: 220px;
     }
 
-    img {
-        float: left;
-        margin-right: 20px;
-        width: 200px;
-        position: absolute;
-        clip: rect(0px,200px,200px,0px);
+    .portraits {
+        text-align: center;
+
+        img {
+            margin-left: 15px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
 
     dl {
         float: left;
-        width: 380px;
         margin: 0;
         padding: 0;
 
-        dt { float: left; width: 80px; }
-        dd { margin-left: 80px; }
+        dt { float: left; width: 90px; }
+        dd { margin-left: 90px; }
     }
 
-    ol.links {
+    ol#skiplinks {
         clear: both;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
-        // width: 100px;
-        position: absolute;
-        left: 50%;
-        bottom: 0px;
+        width: 120px;
         list-style-type: none;
 
         li {
@@ -339,6 +421,7 @@ header nav .sel a {
             @include border-radius(12px);
             @include box-sizing(border-box);
 
+            &:focus,
             &.selected {
                 background-color: $dotColor;
             }
@@ -368,9 +451,26 @@ header nav .sel a {
     left: 0;
     @include box-shadow(inset 0 -10px 10px -10px rgba(0,0,0,0.37));
 }
+.infowindow {
+    color: #572500;
+
+    h1, h3 { font-size: 1em; margin: 0; color: #8c0000; } // #a70000 #8c0000
+    h1 { font-size: 1.25em; }
+    p { margin: 0 0 1em 0; }
+    p:last-child { margin: 0; }
+    a {
+        color: inherit;
+        &:hover { text-decoration: underline; }
+    }
+
+    .one { float: left; font-size: 14px; margin-right: 2em; }
+    .two { float: right; font-size: 12px; }
+}
 
 #global {
     background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
+    @include box-shadow(inset 0 -10px 10px -10px rgba(0,0,0,0.37));
+    // @include background-radial-gradient(100%);
 }
 #global div {
     width: 960px;
@@ -420,6 +520,10 @@ footer nav li {
 }
 footer nav a {
     color: #a8a8a8;
+    &:hover {
+        color: #572500;
+        text-decoration: underline;
+    }
 }
 
 

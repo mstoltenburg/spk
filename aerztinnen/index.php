@@ -12,12 +12,13 @@
 
 	<div id="content">
 	<div id="stage" class="slider">
-	<div id="slider">
+	<div id="slider" class="small">
 
 		<ul class="slides">
+
 			<li id="Hammoser">
-				<div class="doctor">
-					<img src="../images/doctors/dr_fuchs_hammoser.jpg">
+				<div class="slide vcard">
+					<img src="../images/doctors/dr_fuchs_hammoser.jpg" alt="Dr. med. Regina Hammoser" />
 					<div class="info">
 						<h3>Dr. med. Regina Hammoser</h3>
 						<dl>
@@ -32,25 +33,17 @@
 							<dt>1982-85</dt>
 								<dd>Tropenmedizinische Tätigkeit</dd>
 							<dt>1986</dt>
-								<dd>Niederlassung in der Schilddrüsenpraxis Kantstraße 14</dd>
+								<dd>Niederlassung in der Schilddrüsenpraxis Kantstraße 14</dd>
 						</dl>
-
-						<ol class="links">
-							<li><a href="#Hammoser" class="selected"></a></li>
-							<li><a href="#Rautenberg"></a></li>
-							<li><a href="#Seidel"></a></li>
-							<li><a href="#Wiedemann"></a></li>
-							<li><a href="#Wientgen"></a></li>
-						</ol>
 					</div>
 				</div>
-				<a href="#" class="previous"></a>
+				<a href="#membership" class="previous"></a>
 				<a href="#Rautenberg" class="next"></a>
 			</li>
 
 			<li id="Rautenberg">
-				<div class="doctor">
-					<img src="../images/doctors/dr_rautenberg.jpg">
+				<div class="slide vcard">
+					<img src="../images/doctors/dr_rautenberg.jpg" alt="Dr. med. Barbara Rautenberg" />
 					<div class="info">
 						<h3>Dr. med. Barbara Rautenberg</h3>
 						<dl>
@@ -61,16 +54,8 @@
 							<dt>1999-2001</dt>
 								<dd>Akupunkturausbildung (A u. B-Diplom)</dd>
 							<dt>1988</dt>
-								<dd>Niederlassung in der Schilddrüsenpraxis Kantstraße 14</dd>
+								<dd>Niederlassung in der Schilddrüsenpraxis Kantstraße 14</dd>
 						</dl>
-
-						<ol class="links">
-							<li><a href="#Hammoser"></a></li>
-							<li><a href="#Rautenberg" class="selected"></a></li>
-							<li><a href="#Seidel"></a></li>
-							<li><a href="#Wiedemann"></a></li>
-							<li><a href="#Wientgen"></a></li>
-						</ol>
 					</div>
 				</div>
 				<a href="#Hammoser" class="previous"></a>
@@ -78,8 +63,8 @@
 			</li>
 
 			<li id="Seidel">
-				<div class="doctor">
-					<img src="../images/doctors/dr_seidel.jpg">
+				<div class="slide vcard">
+					<img src="../images/doctors/dr_seidel.jpg" alt="Dr. med. Kathrin Seidel" />
 					<div class="info">
 						<h3>Dr. med. Kathrin Seidel</h3>
 						<dl>
@@ -90,16 +75,8 @@
 							<dt>1987-1990</dt>
 								<dd>Praxistätigkeit mit fachärztlicher und hausärztlicher Betreuung (Berlin)</dd>
 							<dt>1991</dt>
-								<dd>Niederlassung in der Schilddrüsenpraxis Kantstraße 14</dd>
+								<dd>Niederlassung in der Schilddrüsenpraxis Kantstraße 14</dd>
 						</dl>
-
-						<ol class="links">
-							<li><a href="#Hammoser"></a></li>
-							<li><a href="#Rautenberg"></a></li>
-							<li><a href="#Seidel" class="selected"></a></li>
-							<li><a href="#Wiedemann"></a></li>
-							<li><a href="#Wientgen"></a></li>
-						</ol>
 					</div>
 				</div>
 				<a href="#Rautenberg" class="previous"></a>
@@ -107,8 +84,8 @@
 			</li>
 
 			<li id="Wiedemann">
-				<div class="doctor">
-					<img src="../images/doctors/dr_wiedemann.jpg">
+				<div class="slide vcard">
+					<img src="../images/doctors/dr_wiedemann.jpg" alt="Dr. med. Natascha Wiedemann" />
 					<div class="info">
 						<h3>Dr. med. Natascha Wiedemann</h3>
 						<dl>
@@ -119,16 +96,8 @@
 							<dt>2003</dt>
 								<dd>Facharztanerkennung Innere Medizin</dd>
 							<dt>Seit 2011</dt>
-								<dd>tätig als angestellte Ärztin in der Schilddrüsenpraxis Kantstraße 14</dd>
+								<dd>tätig als angestellte Ärztin in der Schilddrüsenpraxis Kantstraße 14</dd>
 						</dl>
-
-						<ol class="links">
-							<li><a href="#Hammoser"></a></li>
-							<li><a href="#Rautenberg"></a></li>
-							<li><a href="#Seidel"></a></li>
-							<li><a href="#Wiedemann" class="selected"></a></li>
-							<li><a href="#Wientgen"></a></li>
-						</ol>
 					</div>
 				</div>
 				<a href="#Seidel" class="previous"></a>
@@ -136,8 +105,8 @@
 			</li>
 
 			<li id="Wientgen">
-				<div class="doctor">
-					<img src="../images/doctors/dr_wientgen.jpg">
+				<div class="slide vcard">
+					<img src="../images/doctors/dr_wientgen.jpg" alt="Dr. med. Hilke Wientgen" />
 					<div class="info">
 						<h3>Dr. med. Hilke Wientgen</h3>
 						<dl>
@@ -152,70 +121,50 @@
 							<dt>2007-2010</dt>
 								<dd>tätig im Endokrinologikum Berlin</dd>
 							<dt>Seit 2011</dt>
-								<dd>tätig als angestellte Ärztin in der Schilddrüsenpraxis Kantstraße 14</dd>
+								<dd>tätig als angestellte Ärztin in der Schilddrüsenpraxis Kantstraße 14</dd>
 						</dl>
-
-						<ol class="links">
-							<li><a href="#Hammoser"></a></li>
-							<li><a href="#Rautenberg"></a></li>
-							<li><a href="#Seidel"></a></li>
-							<li><a href="#Wiedemann"></a></li>
-							<li><a href="#Wientgen" class="selected"></a></li>
-						</ol>
 					</div>
 				</div>
 				<a href="#Wiedemann" class="previous"></a>
-				<a href="#" class="next"></a>
+				<a href="#membership" class="next"></a>
 			</li>
+
+			<li id="membership">
+				<div class="slide">
+					<h3>Mitgliedschaften</h3>
+					<ul>
+						<li>Deutsche Gesellschaft für Endokrinologie (DGE)</li>
+						<li>Sektion angewandte Endokrinologie der DGE</li>
+						<li>Deutsche Gesellschaft für Angewandte Endokrinologie</li>
+						<li>Deutsche Gesellschaft für Innere Medizin</li>
+						<li>Deutsche Gesellschaft für Nuklearmedizin</li>
+						<li>Deutsche Akupunkturgesellschaft Düsseldorf</li>
+						<li>American Association of Clinical Endocrinologists (AACE)</li>
+					</ul>
+				</div>
+				<a href="#Wientgen" class="previous"></a>
+				<a href="#Hammoser" class="next"></a>
+			</li>
+
 		</ul>
 
+		<ol id="skiplinks">
+			<li><a href="#Hammoser"></a></li>
+			<li><a href="#Rautenberg"></a></li>
+			<li><a href="#Seidel"></a></li>
+			<li><a href="#Wiedemann"></a></li>
+			<li><a href="#Wientgen"></a></li>
+			<li><a href="#membership"></a></li>
+		</ol>
 	</div>
 	</div>
 	</div>
-
-	<script type="text/javascript">
-
-	var slider = document.getElementById('slider');
-
-	slider.addEventListener('click', slide, false);
-
-	function slide(event) {
-		console.log(event);
-
-		// Fix target property, if necessary
-		if (!event.target) { event.target = event.srcElement || document; }
-
-		// check if target is a textnode (safari)
-		if (event.target.nodeType === 3) { event.target = event.target.parentNode; }
-
-		// if preventDefault exists run it on the original event
-		if (event.preventDefault) {
-			event.preventDefault();
-		// otherwise set the returnValue property of the original event to false (IE)
-		} else {
-			event.returnValue = false;
-		}
-
-		if (event.target.nodeName === 'A') {
-			var a = event.target;
-			var targetId = a.getAttribute('href').substr(1);
-			var target = document.getElementById(targetId);
-
-			slider.getElementsByTagName('ul')[0].style.left = (target.offsetLeft * -1) + 'px';
-
-			console.log(targetId, target.offsetLeft);
-
-			a.blur();
-		}
-
-	}
-
-	</script>
 
 	<?php include $BASE_URL . 'include/snippets/global.inc.php'; ?>
 
 	<?php include $BASE_URL . 'include/snippets/footer.inc.php'; ?>
 
+	<script type="text/javascript" src="<?php echo $BASE_URL; ?>js/spk.js"></script>
 </body>
 
 </html>
