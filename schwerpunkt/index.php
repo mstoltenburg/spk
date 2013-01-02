@@ -11,6 +11,7 @@
 	<?php include $BASE_URL . 'include/snippets/header.inc.php'; ?>
 
 	<div id="content">
+		<h2>Schwerpunkt</h2>
 	<div id="stage">
 
 		<p>Wir sind <strong>Fachärzte für Innere Medizin</strong> mit breitgefächerter Ausbildung und Zulassung für die Durchführung nuklearmedizinischer Schilddrüsendiagnostik.</p>

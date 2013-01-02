@@ -12,6 +12,8 @@
 
 	<div id="content">
 	<div id="stage" class="slider">
+		<h2>Ärztinnen</h2>
+
 	<div id="slider" class="small">
 
 		<ul class="slides">

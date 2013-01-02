@@ -26,6 +26,10 @@ function initialize() {
 		infowindow.open(map, marker);
 	});
 
+	google.maps.event.addListener(infowindow, 'closeclick', function() {
+		map.panTo(office);
+	});
+
 	// google.maps.event.trigger(marker, 'click');
 
 	google.maps.event.addListener(marker, 'dragstart', function() {

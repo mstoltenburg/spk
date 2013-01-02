@@ -14,8 +14,7 @@
 			</p>
 
 			<p>
-				Tel. <a href="tel://+49-30-3133053">030 / 313 30 53</a><br />
-				Fax. <a href="tel://+49-30-3133761">030 / 313 37 61</a><br />
+				<?php include $BASE_URL . 'include/snippets/phone.inc.php'; ?>
 			</p>
 		</div>
 		<div class="two">

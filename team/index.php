@@ -11,7 +11,9 @@
 	<?php include $BASE_URL . 'include/snippets/header.inc.php'; ?>
 
 	<div id="content">
-	<div id="stage" class="slider">
+		<h2>Unser Team</h2>
+	<div id="stage" class="teamshow">
+
 	<div id="slider">
 
 		<ul class="slides">
@@ -22,7 +24,6 @@
 						<li>5 Ärztinnen für Innere Medizin</li>
 						<li>1 MTA</li>
 						<li>8 Arzthelferinnen</li>
-						<li>1 Sekretärin</li>
 					</ul>
 				</div>
 				<a href="#slide4" class="previous"></a>
