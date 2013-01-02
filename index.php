@@ -5,13 +5,14 @@
 
 <head>
 	<?php include $BASE_URL . 'include/snippets/head.inc.php'; ?>
+<!--
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="<?php echo $BASE_URL; ?>js/map.js"></script>
+ -->
 </head>
 
 <body>
 	<?php include $BASE_URL . 'include/snippets/header.inc.php'; ?>
-
 
 	<div id="content">
 		<div id="stage">

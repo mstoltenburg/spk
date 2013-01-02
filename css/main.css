@@ -88,8 +88,11 @@ header hgroup {
   min-height: 147px;
   border-left: 5px solid #a70000;
   color: #a70000;
-  margin: 40px auto 46px auto;
-  padding: 0; }
+  margin: 40px auto 43px auto;
+  padding: 0;
+  background: white url("../images/header.png") no-repeat 0 0;
+  border-left: 0;
+  height: 147px; }
 
 header h1 {
   margin: 0 0 17px 32px;
@@ -417,7 +420,6 @@ header nav .sel a {
 
 #global aside {
   width: 244px;
-  min-height: 133px;
   float: left;
   margin-right: 30px;
   padding: 20px;

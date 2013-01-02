@@ -5,3 +5,14 @@
 	<link rel="shortcut icon" href="<?php echo $BASE_URL; ?>favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="<?php echo $BASE_URL; ?>css/normalize.css">
 	<link rel="stylesheet" href="<?php echo $BASE_URL; ?>css/main.css">
+<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('hgroup');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+<![endif]-->

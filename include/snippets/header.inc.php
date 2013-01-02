@@ -1,5 +1,5 @@
 	<header>
-		<hgroup class="clearfix">
+		<hgroup class="clearfix ir">
 			<h1><a href="<?php echo $BASE_URL; ?>">Schilddrüsenpraxis
 						Kantstraße</a></h1>
 			<h2>Innere Medizin</h2>

@@ -108,11 +108,14 @@ a {
 header hgroup {
     width: 960px;
     min-height: 147px;
-    //background: #fff url("../images/logo.png") no-repeat 0 0;
     border-left: 5px solid #a70000;
     color: #a70000;
-    margin: 40px auto 46px auto;
+    margin: 40px auto 43px auto;
     padding: 0;
+
+    background: #fff url("../images/header.png") no-repeat 0 0;
+    border-left: 0;
+    height: 147px;
 }
 header h1 {
     margin: 0 0 17px 32px;
@@ -480,7 +483,7 @@ $sliderWidth2: 920px;
 }
 #global aside {
     width: 244px;
-    min-height: 133px;
+    // min-height: 133px;
     float: left;
     margin-right: 30px;
     padding: 20px;

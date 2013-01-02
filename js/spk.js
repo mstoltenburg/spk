@@ -14,13 +14,18 @@
 			{
 				this.skiplinks[0].className = 'selected';
 
-				this.slider.addEventListener('click', this.slide, false);
+				if (document.addEventListener) {
+					this.slider.addEventListener('click', this.slide, false);
 
-				var h3 = this.slider.getElementsByTagName('h3')[0];
-				h3.addEventListener('click', function(e){
-					var stage = document.getElementById('stage');
-					stage.className = stage.className === 'slider' ? 'teamshow' : 'slider';
-				}, false);
+					var h3 = this.slider.getElementsByTagName('h3')[0];
+					h3.addEventListener('click', function(e){
+						var stage = document.getElementById('stage');
+						stage.className = stage.className === 'slider' ? 'teamshow' : 'slider';
+					}, false);
+
+				} else if (document.attachEvent) {
+					this.slider.attachEvent('onclick', this.slide);
+				}
 
 				return this;
 			},
