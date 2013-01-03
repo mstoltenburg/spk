@@ -533,7 +533,7 @@ $sliderWidth2: 960px;
 
 footer {
     margin: 27px 0;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 footer nav {
     h4 {
@@ -677,6 +677,135 @@ footer nav {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+    body {
+        min-width: auto;
+        font-size: 14px;
+    }
+
+    header hgroup {
+        width: auto;
+        background-size: contain;
+        margin: 20px 20px 0 20px;
+
+        h3 {
+            display: none;
+        }
+    }
+
+    header nav {
+        font-size: 20px;
+
+        ul {
+            width: auto;
+        }
+        li {
+            float: none;
+            display: block;
+        }
+    }
+
+    ol, ul {
+        padding-left: 20px;
+    }
+
+    #stage {
+        padding: 35px 20px;
+        width: auto;
+
+        &.slider {
+            width: auto;
+            height: auto;
+        }
+
+    }
+
+    $sliderWidth1: 100%;
+    $sliderWidth2: 100%;
+
+    #slider {
+        width: $sliderWidth1;
+        height: auto;
+        padding: 0;
+
+        ul.slides {
+            width: 100%;
+
+            & > li {
+                width: $sliderWidth1;
+                float: none;
+            }
+        }
+
+        &.small {
+            width: $sliderWidth2;
+
+            ul.slides > li {
+                width: $sliderWidth2;
+            }
+        }
+
+        .slide {
+            margin: 40px 20px;
+            height: auto;
+        }
+
+        .vcard {
+            img {
+                margin: 0;
+                float: none;
+                position: static;
+            }
+        }
+
+        .info {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        dl {
+            float: none;
+
+            dt { float: none; width: auto; }
+            dd { margin-left: 20px; }
+        }
+
+        ol#skiplinks,
+        a.previous,
+        a.next {
+            display: none;
+        }
+
+    }
+
+    #global {
+        div {
+            width: auto;
+            padding: 0;
+        }
+
+        aside {
+            margin: 20px;
+            width: auto;
+            float: none;
+        }
+    }
+
+    footer {
+        margin: 25px 20px;
+
+        nav {
+            ul {
+                width: auto;
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */

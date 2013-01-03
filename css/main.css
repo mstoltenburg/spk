@@ -469,7 +469,7 @@ header nav .sel a {
 
 footer {
   margin: 27px 0;
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 footer nav h4 {
   display: none; }
@@ -580,6 +580,85 @@ footer nav a {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 480px) {
+  body {
+    min-width: auto;
+    font-size: 14px; }
+
+  header hgroup {
+    width: auto;
+    background-size: contain;
+    margin: 20px 20px 0 20px; }
+    header hgroup h3 {
+      display: none; }
+
+  header nav {
+    font-size: 20px; }
+    header nav ul {
+      width: auto; }
+    header nav li {
+      float: none;
+      display: block; }
+
+  ol, ul {
+    padding-left: 20px; }
+
+  #stage {
+    padding: 35px 20px;
+    width: auto; }
+    #stage.slider {
+      width: auto;
+      height: auto; }
+
+  #slider {
+    width: 100%;
+    height: auto;
+    padding: 0; }
+    #slider ul.slides {
+      width: 100%; }
+      #slider ul.slides > li {
+        width: 100%;
+        float: none; }
+    #slider.small {
+      width: 100%; }
+      #slider.small ul.slides > li {
+        width: 100%; }
+    #slider .slide {
+      margin: 40px 20px;
+      height: auto; }
+    #slider .vcard img {
+      margin: 0;
+      float: none;
+      position: static; }
+    #slider .info {
+      margin: 0; }
+    #slider h3 {
+      margin: 10px 0;
+      font-size: 18px; }
+    #slider dl {
+      float: none; }
+      #slider dl dt {
+        float: none;
+        width: auto; }
+      #slider dl dd {
+        margin-left: 20px; }
+    #slider ol#skiplinks,
+    #slider a.previous,
+    #slider a.next {
+      display: none; }
+
+  #global div {
+    width: auto;
+    padding: 0; }
+  #global aside {
+    margin: 20px;
+    width: auto;
+    float: none; }
+
+  footer {
+    margin: 25px 20px; }
+    footer nav ul {
+      width: auto; } }
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
