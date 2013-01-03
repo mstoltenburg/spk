@@ -711,7 +711,7 @@ footer nav {
     }
 
     #stage {
-        padding: 35px 20px;
+        padding: 20px;
         width: auto;
 
         &.slider {
@@ -793,6 +793,10 @@ footer nav {
             margin: 20px;
             width: auto;
             float: none;
+
+            p {
+                font-size: 1em;
+            }
         }
     }
 

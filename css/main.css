@@ -604,7 +604,7 @@ footer nav a {
     padding-left: 20px; }
 
   #stage {
-    padding: 35px 20px;
+    padding: 20px;
     width: auto; }
     #stage.slider {
       width: auto;
@@ -654,6 +654,8 @@ footer nav a {
     margin: 20px;
     width: auto;
     float: none; }
+    #global aside p {
+      font-size: 1em; }
 
   footer {
     margin: 25px 20px; }
