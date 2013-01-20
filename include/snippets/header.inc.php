@@ -1,5 +1,5 @@
 	<header>
-		<hgroup>
+		<hgroup class="clearfix">
 			<h3>Dr. med. Regina Hammoser
 				Dr. med. Barbara Rautenberg
 				Dr. med. Kathrin Seidel

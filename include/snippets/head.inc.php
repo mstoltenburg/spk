@@ -1,5 +1,5 @@
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Schilddrüsenpraxis Berlin Kantstraße</title>
 	<meta name="viewport" content="width=device-width" />
 	<link rel="shortcut icon" href="<?php echo $BASE_URL; ?>favicon.ico" type="image/x-icon" />

@@ -83,27 +83,14 @@ body {
 a {
   text-decoration: none; }
 
-header h3 {
-  float: right;
-  color: #a70000;
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-weight: 300;
-  white-space: pre-line; }
-
 header hgroup {
   width: 960px;
-  min-height: 147px;
-  border-left: 5px solid #a70000;
-  color: #a70000;
+  height: 147px;
   margin: 40px auto 43px auto;
   padding: 0;
+  color: #a70000;
   background: white url("../images/header.png") no-repeat 0 0;
-  border-left: 0;
-  height: 147px;
   overflow: hidden; }
-
 header h1 {
   margin: 0;
   color: transparent;
@@ -112,18 +99,20 @@ header h1 {
     color: inherit;
     display: block;
     height: 100%; }
-
 header h2 {
   float: left;
   margin: 0;
-  padding: 0 12px 0 32px;
   font-size: 25px;
   font-weight: 300;
   line-height: 1; }
-
-header h2 + h2 {
-  border-left: 2px solid #a70000;
-  padding-left: 12px; }
+header h3 {
+  float: right;
+  color: #a70000;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 300;
+  white-space: pre-line; }
 
 header nav {
   background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
@@ -587,10 +576,28 @@ footer nav a {
 
   header hgroup {
     width: auto;
-    background-size: contain;
-    margin: 20px 20px 0 20px; }
-    header hgroup h3 {
-      display: none; }
+    height: auto;
+    margin: 20px;
+    background-image: none;
+    border-left: 5px solid #a70000;
+    overflow: visible; }
+  header h1 {
+    margin: 0 0 17px 20px;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1em;
+    white-space: pre-line;
+    color: inherit;
+    height: auto; }
+  header h2 {
+    font-size: 12px;
+    padding: 0 6px 0 20px; }
+  header h2 + h2 {
+    border-left: 1px solid #a70000;
+    padding-left: 6px; }
+  header h3 {
+    display: none; }
 
   header nav {
     font-size: 20px; }
@@ -603,12 +610,18 @@ footer nav a {
   ol, ul {
     padding-left: 20px; }
 
+  #content h2 {
+    display: block; }
+
   #stage {
     padding: 20px;
     width: auto; }
     #stage.slider {
       width: auto;
       height: auto; }
+
+  .teamshow #slider {
+    overflow: hidden; }
 
   #slider {
     width: 100%;
@@ -627,11 +640,19 @@ footer nav a {
       margin: 40px 20px;
       height: auto; }
     #slider .vcard img {
-      margin: 0;
+      display: block;
+      margin: 0 auto;
       float: none;
       position: static; }
     #slider .info {
       margin: 0; }
+    #slider .portraits img {
+      float: left;
+      width: 30%;
+      height: 30%;
+      margin: 0 0 10px 10px; }
+      #slider .portraits img:first-child {
+        margin-left: 10px; }
     #slider h3 {
       margin: 10px 0;
       font-size: 18px; }
