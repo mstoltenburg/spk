@@ -153,62 +153,70 @@ header {
         font-weight: 300;
         white-space: pre-line;
     }
-}
 
-header nav {
-    background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
-    @include box-shadow(inset 0 10px 10px -10px rgba(0,0,0,0.37));
-    // @include background-radial-gradient(0%);
-    font-size: 25px;
-    font-weight: 300;
+    nav {
+        background: #f6f6f1 url("../images/pattern.png") repeat 50% 0;
+        @include box-shadow(inset 0 10px 10px -10px rgba(0,0,0,0.37));
+        // @include background-radial-gradient(0%);
+        font-size: 25px;
+        font-weight: 300;
 
-    h4 {
-        display: none;
+        h4 {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            width: 960px;
+            margin: 0 auto;
+            padding: 0;
+            border-left: 1px solid #dfdfdf;
+            @include box-shadow(inset 1px 0 0 #fff);
+        }
+
+        li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            border-right: 1px solid #dfdfdf;
+            @include box-shadow(1px 0 0 #fff);
+
+            &:hover {
+                background-color: rgba(196,23,0,0.12);
+            }
+
+            &.sel {
+                // background-color: rgba(196,23,0,0.12);
+                // @include background-linear-gradient(#a70000, #dc1f00);
+                @include box-shadow(inherit);
+                background: #C41700 url("../images/bg_nav.png") 0 100% repeat-x;
+            }
+        }
+
+        a {
+            padding: 20px 40px;
+            color: #8b0200;
+            display: block;
+        }
+
+        a:hover {
+        }
+
+        .sel a {
+            color: #fff;
+        }
+
+        span {
+            &.icon {
+                display: inline-block;
+                margin-right: 14px;
+                vertical-align: middle;
+                height: 36px;
+                background-image: url("../images/icons/sprite.png");
+                background-repeat: no-repeat;
+            }
+        }
     }
-}
-header nav ul {
-    list-style-type: none;
-    width: 960px;
-    margin: 0 auto;
-    padding: 0;
-    border-left: 1px solid #dfdfdf;
-    @include box-shadow(inset 1px 0 0 #fff);
-}
-header nav li {
-    float: left;
-    margin: 0;
-    padding: 0;
-    border-right: 1px solid #dfdfdf;
-    @include box-shadow(1px 0 0 #fff);
-
-    &:hover {
-        background-color: rgba(196,23,0,0.12);
-    }
-
-    &.sel {
-        // background-color: rgba(196,23,0,0.12);
-        // @include background-linear-gradient(#a70000, #dc1f00);
-        @include box-shadow(inherit);
-        background: #C41700 url("../images/bg_nav.png") 0 100% repeat-x;
-    }
-}
-header nav a {
-    padding: 20px 40px;
-    color: #8b0200;
-    display: block;
-}
-header nav a:hover {
-}
-header nav .sel a {
-    color: #fff;
-}
-header nav span {
-    display: inline-block;
-    margin-right: 14px;
-    vertical-align: middle;
-    height: 36px;
-    background-image: url("../images/icons/sprite.png");
-    background-repeat: no-repeat;
 }
 
 .doctors {
@@ -247,8 +255,6 @@ header nav span {
 #content {
     min-height: 325px;
     position: relative;
-    // margin-left: -20px;
-    // padding-left: 20px;
     @include box-shadow(inset 0 10px 10px -10px rgba(0,0,0,0.37), inset 0 -10px 10px -10px rgba(0,0,0,0.37));
     background: #f7f7f7 url("../images/bg_content.png") 0% 0% repeat;
 
@@ -674,6 +680,19 @@ footer nav {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 640px) {
+    header nav {
+        span {
+            &.icon {
+                display: none;
+            }
+            &.label {
+                margin: 0;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 480px) {
     body {
         min-width: auto;
@@ -731,10 +750,13 @@ footer nav {
             padding: 10px 0;
         }
         span {
-            margin: 0;
-        }
-        .label {
-            display: none;
+            &.icon {
+                margin: 0;
+                display: inline-block;
+            }
+            &.label {
+                display: none;
+            }
         }
     }
 
