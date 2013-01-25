@@ -109,37 +109,43 @@ header {
 
     hgroup {
         width: 960px;
-        height: 147px;
+        min-height: 147px;
+	    border-left: 5px solid #a70000;
+        color: #a70000; // dc1f00 -> a70000
         margin: 40px auto 43px auto;
         padding: 0;
-        color: #a70000;
-        background: #fff url("../images/header.png") no-repeat 0 0;
-        overflow: hidden;
     }
 
     h1 {
-        margin: 0;
-        color: transparent;
-        height: 100%;
+		margin: 0 0 17px 32px;
+		padding: 0;
+		font-size: 50px;
+		font-weight: 300;
+		line-height: 53px;
+		white-space: pre-line;
 
         a {
             color: inherit;
-            display: block;
-            height: 100%;
         }
     }
 
     h2 {
         float: left;
         margin: 0;
+	    padding: 0 12px 0 32px;
         font-size: 25px;
         font-weight: 300;
         line-height: 1;
     }
 
+	h2 + h2 {
+		border-left: 2px solid #a70000;
+		padding-left: 12px;
+	}
+
     h3 {
         float: right;
-        color: #a70000;
+        color: #8b0200;
         margin: 0;
         padding: 0;
         font-size: 1.0625em;
@@ -678,6 +684,7 @@ footer nav {
         hgroup {
             width: auto;
             height: auto;
+            min-height: auto;
             margin: 20px;
             background-image: none;
             border-left: 5px solid #a70000;
@@ -717,8 +724,17 @@ footer nav {
             width: auto;
         }
         li {
-            float: none;
-            display: block;
+            width: 24%;
+            text-align: center;
+        }
+        a {
+            padding: 10px 0;
+        }
+        span {
+            margin: 0;
+        }
+        .label {
+            display: none;
         }
     }
 
@@ -729,10 +745,14 @@ footer nav {
     #content {
         h2 {
             display: block;
+            margin: 0 0 -3em 20px;
+            font-weight: normal;
+            line-height: 3em;
+            color: #572500;
         }
     }
     #stage {
-        padding: 20px;
+        padding: 4em 20px 20px 20px;
         width: auto;
 
         &.slider {
@@ -818,6 +838,25 @@ footer nav {
             display: none;
         }
 
+    }
+
+    .teamshow {
+        margin: 20px auto !important;
+        width: 340px;
+
+        li {
+            display: inline;
+            text-align: center;
+
+            img {
+                margin: 0 0 20px 20px;
+                float: left;
+
+                &:first-child {
+                    margin-left: 20px;
+                }
+            }
+        }
     }
 
     #global {

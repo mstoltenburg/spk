@@ -85,29 +85,33 @@ a {
 
 header hgroup {
   width: 960px;
-  height: 147px;
-  margin: 40px auto 43px auto;
-  padding: 0;
+  min-height: 147px;
+  border-left: 5px solid #a70000;
   color: #a70000;
-  background: white url("../images/header.png") no-repeat 0 0;
-  overflow: hidden; }
+  margin: 40px auto 43px auto;
+  padding: 0; }
 header h1 {
-  margin: 0;
-  color: transparent;
-  height: 100%; }
+  margin: 0 0 17px 32px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 53px;
+  white-space: pre-line; }
   header h1 a {
-    color: inherit;
-    display: block;
-    height: 100%; }
+    color: inherit; }
 header h2 {
   float: left;
   margin: 0;
+  padding: 0 12px 0 32px;
   font-size: 25px;
   font-weight: 300;
   line-height: 1; }
+header h2 + h2 {
+  border-left: 2px solid #a70000;
+  padding-left: 12px; }
 header h3 {
   float: right;
-  color: #a70000;
+  color: #8b0200;
   margin: 0;
   padding: 0;
   font-size: 1.0625em;
@@ -569,6 +573,7 @@ footer nav a {
   header hgroup {
     width: auto;
     height: auto;
+    min-height: auto;
     margin: 20px;
     background-image: none;
     border-left: 5px solid #a70000;
@@ -596,17 +601,27 @@ footer nav a {
     header nav ul {
       width: auto; }
     header nav li {
-      float: none;
-      display: block; }
+      width: 24%;
+      text-align: center; }
+    header nav a {
+      padding: 10px 0; }
+    header nav span {
+      margin: 0; }
+    header nav .label {
+      display: none; }
 
   ol, ul {
     padding-left: 20px; }
 
   #content h2 {
-    display: block; }
+    display: block;
+    margin: 0 0 -3em 20px;
+    font-weight: normal;
+    line-height: 3em;
+    color: #572500; }
 
   #stage {
-    padding: 20px;
+    padding: 4em 20px 20px 20px;
     width: auto; }
     #stage.slider {
       width: auto;
@@ -656,6 +671,18 @@ footer nav a {
     #slider a.previous,
     #slider a.next {
       display: none; }
+
+  .teamshow {
+    margin: 20px auto !important;
+    width: 340px; }
+    .teamshow li {
+      display: inline;
+      text-align: center; }
+      .teamshow li img {
+        margin: 0 0 20px 20px;
+        float: left; }
+        .teamshow li img:first-child {
+          margin-left: 20px; }
 
   #global div {
     width: auto;

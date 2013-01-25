@@ -21,7 +21,7 @@
 			<li>8 Arzthelferinnen</li>
 		</ul>
 
-		<ul class="teamshow">
+		<ul class="teamshow clearfix">
 			<li>
 				<img src="../images/portraits/DSC_1770k.jpg" width="140" height="210" alt="" />
 				<img src="../images/portraits/DSC_1736b.jpg" width="140" height="210" alt="" />
