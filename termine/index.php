@@ -4,11 +4,11 @@
 <?php include '../include/config.inc.php'; $BASE_DIR = 'termine'; ?>
 
 <head>
-	<?php include $BASE_URL . 'include/snippets/head.inc.php'; ?>
+<?php include $BASE_URL . 'include/snippets/head.inc.php'; ?>
 </head>
 
 <body>
-	<?php include $BASE_URL . 'include/snippets/header.inc.php'; ?>
+<?php include $BASE_URL . 'include/snippets/header.inc.php'; ?>
 
 	<div id="content">
 		<h2>Termine</h2>
@@ -40,9 +40,9 @@
 	</div>
 	</div>
 
-	<?php include $BASE_URL . 'include/snippets/global.inc.php'; ?>
+<?php include $BASE_URL . 'include/snippets/global.inc.php'; ?>
 
-	<?php include $BASE_URL . 'include/snippets/footer.inc.php'; ?>
+<?php include $BASE_URL . 'include/snippets/footer.inc.php'; ?>
 
 </body>
 

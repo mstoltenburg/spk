@@ -142,7 +142,8 @@ header {
         color: #a70000;
         margin: 0;
         padding: 0;
-        font-size: 1em;
+        font-size: 1.0625em;
+        line-height: 1.5882;
         font-weight: 300;
         white-space: pre-line;
     }
@@ -180,47 +181,60 @@ header nav li {
 
     &.sel {
         // background-color: rgba(196,23,0,0.12);
-        @include background-linear-gradient(#a70000, #dc1f00);
+        // @include background-linear-gradient(#a70000, #dc1f00);
         @include box-shadow(inherit);
+        background: #C41700 url("../images/bg_nav.png") 0 100% repeat-x;
     }
 }
 header nav a {
     padding: 20px 40px;
     color: #8b0200;
     display: block;
-    background-image: url("../images/icons/sprite.png");
-    background-position: 40px 47%;
-    background-repeat: no-repeat;
 }
 header nav a:hover {
 }
 header nav .sel a {
     color: #fff;
 }
+header nav span {
+    display: inline-block;
+    margin-right: 14px;
+    vertical-align: middle;
+    height: 36px;
+    background-image: url("../images/icons/sprite.png");
+    background-repeat: no-repeat;
+}
 
-.team {
-    text-indent: 46px;
-    background-position: 40px 47%;
+.doctors {
+    width: 22px;
+    background-position: -9px 50%;
 
     .sel & {
-        background-position: -710px 47%;
+        background-position: -169px 50%;
     }
 }
-.doctors,
-.focus {
-    text-indent: 38px;
-    background-position: -210px 47%;
+.team {
+    width: 33px;
+    background-position: -44px 50%;
 
     .sel & {
-        background-position: -960px 47%;
+        background-position: -204px 50%;
+    }
+}
+.focus {
+    width: 24px;
+    background-position: -89px 50%;
+
+    .sel & {
+        background-position: -249px 50%;
     }
 }
 .appointment {
-    text-indent: 42px;
-    background-position: -460px 47%;
+    width: 30px;
+    background-position: -125px 50%;
 
     .sel & {
-        background-position: -1210px 47%;
+        background-position: -285px 50%;
     }
 }
 
@@ -272,43 +286,17 @@ header nav .sel a {
         height: 325px;
         background: inherit;
     }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0 0 10px 0;
+    }
 }
 
 $sliderWidth1: 960px;
 $sliderWidth2: 960px;
 
-.teamshow #slider {
-    padding: 0;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    @include box-shadow(none);
-
-    ul.slides {
-        width: auto;
-
-        & > li {
-            width: auto;
-            float: none;
-        }
-    }
-
-    .slide {
-        margin: 0 0 35px 0;
-        height: auto;
-    }
-
-    ol#skiplinks,
-    a.previous,
-    a.next {
-        display: none;
-    }
-
-    .portraits {
-        margin: 0 0 20px 0;
-        // text-align: left;
-    }
-}
 #slider {
     width: $sliderWidth1;
     height: 275px;
@@ -364,12 +352,6 @@ $sliderWidth2: 960px;
 
     a.previous { left: 20px; }
     a.next { right: 20px; background-position: -20px 0; }
-
-    h3 {
-        font-size: 20px;
-        font-weight: 300;
-        margin: 0 0 10px 0;
-    }
 
     .slide {
         position: relative;
@@ -445,6 +427,23 @@ $sliderWidth2: 960px;
     }
 }
 
+.teamshow {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        margin: 0 0 24px 0;
+        text-align: center;
+
+        img {
+            margin-left: 20px;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
 
 #content.map,
 #map {
@@ -679,7 +678,6 @@ footer nav {
         hgroup {
             width: auto;
             height: auto;
-            // background-size: contain;
             margin: 20px;
             background-image: none;
             border-left: 5px solid #a70000;
@@ -746,10 +744,6 @@ footer nav {
 
     $sliderWidth1: 100%;
     $sliderWidth2: 100%;
-
-    .teamshow #slider {
-        overflow: hidden;
-    }
 
     #slider {
         width: $sliderWidth1;
