@@ -6,8 +6,8 @@
 				Dr. med. Natascha Wiedemann
 				Dr. med. Hilke Wientgen</h3>
 
-			<h1><a href="<?php echo $BASE_URL; ?>">Schilddrüsenpraxis
-				Kantstraße</a></h1>
+			<h1><a href="<?php echo $BASE_URL; ?>">Schilddr&uuml;senpraxis
+				Kantstra&szlig;e</a></h1>
 			<h2>Innere Medizin</h2>
 			<h2>Hormonlabor</h2>
 			<h2>Szintigrafie</h2>

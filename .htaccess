@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^aerzte.htm$		aerztinnen/	[R=301,L]
+RewriteRule ^anfahrt.htm$		kontakt/		[R=301,L]
+RewriteRule ^impressum.htm$	impressum/	[R=301,L]
+RewriteRule ^schwerpunkt.htm$	schwerpunkt/	[R=301,L]
+RewriteRule ^team.htm$		team/		[R=301,L]
+RewriteRule ^termine.htm$		termine/		[R=301,L]
