@@ -506,7 +506,6 @@ $sliderWidth2: 960px;
 }
 #global aside {
     width: 244px;
-    // min-height: 133px;
     float: left;
     margin-right: 30px;
     padding: 20px;
@@ -695,18 +694,15 @@ footer nav {
 
 @media only screen and (max-width: 480px) {
     body {
-        min-width: auto;
-        font-size: 14px;
+        min-width: 0;
     }
 
     header {
         hgroup {
             width: auto;
             height: auto;
-            min-height: auto;
+            min-height: 0;
             margin: 20px;
-            background-image: none;
-            border-left: 5px solid #a70000;
             overflow: visible;
         }
 
@@ -743,7 +739,7 @@ footer nav {
             width: auto;
         }
         li {
-            width: 24%;
+            width: 24.7%;
             text-align: center;
         }
         a {
@@ -778,6 +774,8 @@ footer nav {
         width: auto;
 
         &.slider {
+            background: #fff;
+            padding-top: 4em;
             width: auto;
             height: auto;
         }
@@ -791,6 +789,8 @@ footer nav {
         width: $sliderWidth1;
         height: auto;
         padding: 0;
+        background: transparent;
+        @include box-shadow(none);
 
         ul.slides {
             width: 100%;
@@ -810,7 +810,7 @@ footer nav {
         }
 
         .slide {
-            margin: 40px 20px;
+            margin: 0 20px 40px;
             height: auto;
         }
 
@@ -871,11 +871,11 @@ footer nav {
             text-align: center;
 
             img {
-                margin: 0 0 20px 20px;
+                margin-left: 0;
                 float: left;
 
                 &:first-child {
-                    margin-left: 20px;
+                    margin-left: 0;
                 }
             }
         }

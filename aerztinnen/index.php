@@ -11,9 +11,8 @@
 <?php include $BASE_URL . 'include/snippets/header.inc.php'; ?>
 
 	<div id="content">
-	<div id="stage" class="slider">
 		<h2>Ärztinnen</h2>
-
+	<div id="stage" class="slider">
 	<div id="slider">
 
 		<ul class="slides">
