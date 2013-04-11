@@ -136,6 +136,10 @@ header {
         font-size: 25px;
         font-weight: 300;
         line-height: 1;
+
+        &:last-child {
+            padding-right: 0;
+        }
     }
 
 	h2 + h2 {
@@ -679,20 +683,25 @@ footer nav {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 640px) {
-    header nav {
-        span {
-            &.icon {
-                display: none;
-            }
-            &.label {
-                margin: 0;
-            }
-        }
+@media only screen and (max-height: 320px) {
+    // body:before {
+    //     content: "max-height: 320px";
+    //     position: absolute;
+    // }
+
+    #content.map,
+    #map {
+        height: 220px;
+        min-height: 0;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
+    body:before {
+        content: "max-width: 640px";
+        position: absolute;
+    }
+
     body {
         min-width: 0;
     }
@@ -702,10 +711,104 @@ footer nav {
             width: auto;
             height: auto;
             min-height: 0;
-            margin: 20px;
+            margin: 20px 0 20px 20px;
             overflow: visible;
         }
 
+        h2 {
+            // font-size: 21px;
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+
+    header nav {
+        font-size: 20px;
+
+        ul {
+            width: auto;
+        }
+
+        a {
+            padding: 15px 20px;
+        }
+
+        span {
+            &.icon {
+                display: none;
+            }
+            &.label {
+                margin: 0;
+            }
+        }
+    }
+
+    #stage {
+        padding: 30px 20px;
+        width: auto;
+
+        &.slider {
+            width: 100%;
+        }
+
+    }
+
+    #slider {
+        width: 100%;
+        ul.slides {
+
+            & > li {
+                width: 100%;
+            }
+        }
+    }
+
+    .teamshow {
+        li {
+            img {
+                margin: 0 20px 20px 0;
+                float: left;
+            }
+        }
+    }
+
+    #global {
+        div {
+            width: auto;
+            padding: 0;
+        }
+
+        aside {
+            margin: 20px;
+            width: auto;
+            float: none;
+        }
+    }
+
+    footer {
+        margin: 27px 20px;
+
+        nav {
+            ul {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    // body:before {
+    //     content: "max-width: 480px";
+    //     position: absolute;
+    // }
+
+    body {
+        min-width: 0;
+    }
+
+    header {
         h1 {
             margin: 0 0 17px 20px;
             padding: 0;
@@ -723,21 +826,13 @@ footer nav {
         }
 
         h2 + h2 {
-            border-left: 1px solid #a70000;
             padding-left: 6px;
-        }
-
-        h3 {
-            display: none;
         }
     }
 
     header nav {
         font-size: 20px;
 
-        ul {
-            width: auto;
-        }
         li {
             width: 24.7%;
             text-align: center;
@@ -873,37 +968,6 @@ footer nav {
             img {
                 margin-left: 0;
                 float: left;
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
-
-    #global {
-        div {
-            width: auto;
-            padding: 0;
-        }
-
-        aside {
-            margin: 20px;
-            width: auto;
-            float: none;
-
-            p {
-                font-size: 1em;
-            }
-        }
-    }
-
-    footer {
-        margin: 25px 20px;
-
-        nav {
-            ul {
-                width: auto;
             }
         }
     }

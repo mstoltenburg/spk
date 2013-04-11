@@ -106,6 +106,8 @@ header h2 {
   font-size: 25px;
   font-weight: 300;
   line-height: 1; }
+  header h2:last-child {
+    padding-right: 0; }
 header h2 + h2 {
   border-left: 2px solid #a70000;
   padding-left: 12px; }
@@ -559,12 +561,16 @@ footer nav a {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-height: 320px) {
+  #content.map,
+  #map {
+    height: 220px;
+    min-height: 0; } }
 @media only screen and (max-width: 640px) {
-  header nav span.icon {
-    display: none; }
-  header nav span.label {
-    margin: 0; } }
-@media only screen and (max-width: 480px) {
+  body:before {
+    content: "max-width: 640px";
+    position: absolute; }
+
   body {
     min-width: 0; }
 
@@ -572,8 +578,53 @@ footer nav a {
     width: auto;
     height: auto;
     min-height: 0;
-    margin: 20px;
+    margin: 20px 0 20px 20px;
     overflow: visible; }
+  header h3 {
+    display: none; }
+
+  header nav {
+    font-size: 20px; }
+    header nav ul {
+      width: auto; }
+    header nav a {
+      padding: 15px 20px; }
+    header nav span.icon {
+      display: none; }
+    header nav span.label {
+      margin: 0; }
+
+  #stage {
+    padding: 30px 20px;
+    width: auto; }
+    #stage.slider {
+      width: 100%; }
+
+  #slider {
+    width: 100%; }
+    #slider ul.slides > li {
+      width: 100%; }
+
+  .teamshow li img {
+    margin: 0 20px 20px 0;
+    float: left; }
+
+  #global div {
+    width: auto;
+    padding: 0; }
+  #global aside {
+    margin: 20px;
+    width: auto;
+    float: none; }
+
+  footer {
+    margin: 27px 20px; }
+    footer nav ul {
+      width: auto; } }
+@media only screen and (max-width: 480px) {
+  body {
+    min-width: 0; }
+
   header h1 {
     margin: 0 0 17px 20px;
     padding: 0;
@@ -587,15 +638,10 @@ footer nav a {
     font-size: 12px;
     padding: 0 6px 0 20px; }
   header h2 + h2 {
-    border-left: 1px solid #a70000;
     padding-left: 6px; }
-  header h3 {
-    display: none; }
 
   header nav {
     font-size: 20px; }
-    header nav ul {
-      width: auto; }
     header nav li {
       width: 24.7%;
       text-align: center; }
@@ -683,24 +729,7 @@ footer nav a {
       text-align: center; }
       .teamshow li img {
         margin-left: 0;
-        float: left; }
-        .teamshow li img:first-child {
-          margin-left: 0; }
-
-  #global div {
-    width: auto;
-    padding: 0; }
-  #global aside {
-    margin: 20px;
-    width: auto;
-    float: none; }
-    #global aside p {
-      font-size: 1em; }
-
-  footer {
-    margin: 25px 20px; }
-    footer nav ul {
-      width: auto; } }
+        float: left; } }
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
